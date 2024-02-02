@@ -1,6 +1,6 @@
 {
   "name": "@xyzk/orochimaru",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Orochi smart contracts for on-chain verification",
   "main": "index.js",
   "type": "commonjs",
