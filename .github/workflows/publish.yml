@@ -61,7 +61,7 @@ jobs:
 
       - name: Publish package to NPM
         run: |
-          CURRENT_VERSION=$(node -p "require('./packages/kubo/package.json').version")
+          CURRENT_VERSION=$(node -p "require('./package.json').version")
           echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
           git tag $CURRENT_VERSION
           git push origin --tags
