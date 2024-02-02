@@ -63,5 +63,6 @@ jobs:
         run: |
           CURRENT_VERSION=$(node -p "require('./package.json').version")
           echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
+          npm publish --access public
           git tag $CURRENT_VERSION
           git push origin --tags
