@@ -29,7 +29,7 @@ jobs:
       - name: Get previous version from Git history
         id: get_previous_number
         run: |
-          PREVIOUS_VERSION=$(git describe --tags --abbrev=0 2>/dev/null)
+          PREVIOUS_VERSION=$(git describe --tags --abbrev=0 2>/dev/null|| echo "0.0.0")
           PREVIOUS_NUMBER=$(echo $PREVIOUS_VERSION | sed 's/[^0-9]//g')
 
           echo "previous_number=${PREVIOUS_NUMBER}" >> "$GITHUB_OUTPUT"
