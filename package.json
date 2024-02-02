@@ -1,12 +1,12 @@
 {
   "name": "@xyzk/orochimaru",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Orochi smart contracts for on-chain verification",
   "main": "index.js",
   "type": "commonjs",
   "files": [
     "/contracts/**/*.sol",
-    "/build/contracts/*.json",
+    "/contracts/build/contracts/*.json",
     "!/contracts/test/**/*"
   ],
   "scripts": {
